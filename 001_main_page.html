@@ -5,21 +5,62 @@
       Welcomme to Erathria!
     </title>
     <style>
-      .castle-div {
+      body {
+        background-image: url(/pictures/clouds.png);
+        background-size: cover;
+      }
+      .heroes-title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      } 
+      .town-div {
         background-color: rgb(81, 197, 86);
         display: inline-block;
         width: 300px;
+        height: 550px;
         display: inline-block;
+        vertical-align: top;
+      }
+      .menu-div{
+        background-color: rgb(81, 197, 86);
+        display: inline-block;
+        width: 155px;
+        height: 550px;
+        display: inline-block;
+        
+        
+      }
+      .gif-picture {
+        max-width: 500px;
+        max-height: 200px;
+        display: block;
+        width: auto;
+        height: auto; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+      .town-picture {
+        max-width: 200px;
+        max-height: 300px;
+        display: block;
+        width: auto;
+        height: auto; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
+    <img src="/pictures/hereos3.png" alt="Heroes title" class="heroes-title">
     <p>
       You are a young knight with a desire to become famous in this magical land.
     </p>
     <p>For start you should choose your faction</p>
-    <div class="castle-div">
-      <img src="/pictures/castle.png">
+    <div class="town-div">
+      <img src="/pictures/castle.png" class="town-picture">
       <p>
         Choose castle
       </p>
@@ -30,11 +71,11 @@
           <li>Strong units</li>
           <li>Mostly fighter heroes </li>
         </ol>
-        
+        <img src="/pictures/angel_animated.gif" class="gif-picture">
       </p>
     </div>
-    <div class="castle-div">
-      <img src="/pictures/inferno.png">
+    <div class="town-div">
+      <img src="/pictures/inferno.png" class="town-picture">
       <p>
         Choose inferno
       </p>
@@ -45,10 +86,13 @@
           <li>Fast units</li>
           <li>Mostly mage heroes </li>
         </ol>
-        
+        <img src="/pictures/devil_animated.gif" class="gif-picture">
       </p>
     </div>
-    
+    <div class="menu-div">
+      <img src="/pictures/new_game.png">
+      <img src="/pictures/quit.png">
+    </div>
     
     <script>
 
